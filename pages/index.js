@@ -1,21 +1,29 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-// import Image from 'next/image'
+import ImageSection from '../components/ImageSection';
 
 export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Create Next App</title>
+                <title>MOBILBRACCO - Mobili Senza Tempo</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main className={styles.main}>
                 <div className={styles.contentOverlay}>
-                    <h1>Siamo in manutenzione,<br/>a breve torneremo online</h1>
+                    <h1>MOBILBRACCO</h1>
+                    <h4>ITALIAN QUALITY MANIFACTURE</h4>
                 </div>
-                <div className={styles.overlay}></div>
-                <img src="/img/background.jpg" alt="background" className={styles.imageBG} layout='fill' />
+                <div className={styles.mainRow}>
+                    <div className={styles.mainRow1}>
+                        <ImageSection img={"img/mobilbraccoHotel.jpg"} title={"HOTEL"} desc={"Bespoke interiors for exclusive hotel."} />
+                    </div>
+                    <div className={styles.mainRow2}>
+                        <ImageSection img={"img/mobilbraccoHome.jpg"} title={"HOME"} desc={"Timeless interior for your home."} />
+                    </div>
+                </div>
+                
             </main>
 
             <footer className={styles.footer}>

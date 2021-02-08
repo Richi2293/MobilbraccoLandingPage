@@ -1,0 +1,44 @@
+.image {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.divImage {
+    position: relative;
+    height: 500px;
+    width: 740px;
+    z-index: 50;
+}
+
+.divTitle {
+    position: relative;
+    width: 600px;
+    height: 165px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: -50px;
+    z-index: 60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.divTitle > h1 {
+    font-size: 40px;
+    font-family: Lato;
+    font-weight: bold;
+    margin-bottom: 0px !important;
+}
+
+.divTitle > h4 {
+    font-size: 20px;
+    font-family: Lato;
+    font-weight: 400;
+    color: #59595B;
+}

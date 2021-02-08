@@ -124,7 +124,6 @@
 }
 
 .overlay {
-  /* background-color: rgba(216,216, 216, 0.35); */
   background-color: rgba(0,0, 0, 0.35);
   position: absolute;
   top: 0;
@@ -139,8 +138,37 @@
 }
 
 .contentOverlay > h1 {
-  color: #fff;
+  color: #000000;
+  text-align: center;
+  font-size: 65px;
+  margin-bottom: 5px !important;
 }
+
+.contentOverlay > h4 {
+  color: #59595B;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Lato;
+}
+
+.mainRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainRow1 {
+  display: flex;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.mainRow2 {
+  display: flex;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
 
 @media (max-width: 600px) {
   .grid {
