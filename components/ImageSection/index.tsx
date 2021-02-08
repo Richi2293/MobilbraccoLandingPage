@@ -1,19 +1,27 @@
 import React, {
     Component, Fragment, useState, useEffect
 } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../../styles/ImageSection.module.css';
 
 interface ImageSectionProps {
     onPress?: any,
     img?: any,
     title?: any,
-    desc?: any
+    desc?: any,
+    url?: any
 }
 
-const ImageSection: React.FC<ImageSectionProps> = ({ img, title, desc }) => {
+const ImageSection: React.FC<ImageSectionProps> = ({ img, title, desc, url }) => {
+    const router = useRouter();
+
+    const onClick = () => {
+        console.log('Url: ', url);
+        router.push(url);
+    }
 
     return (
-        <div className={styles.divMain}>
+        <div className={styles.divMain} onClick={() => onClick()}>
             <div className={styles.divImage}>
                 {img != "" ?
                     <img src={img} className={styles.image} />
@@ -30,7 +38,8 @@ const ImageSection: React.FC<ImageSectionProps> = ({ img, title, desc }) => {
 ImageSection.defaultProps = {
     img: "",
     title: "",
-    desc: ""
+    desc: "",
+    url: ""
 } as Partial<ImageSectionProps>
 
 

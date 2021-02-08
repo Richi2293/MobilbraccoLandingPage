@@ -17,10 +17,10 @@ export default function Home() {
                 </div>
                 <div className={styles.mainRow}>
                     <div className={styles.mainRow1}>
-                        <ImageSection img={"img/mobilbraccoHotel.jpg"} title={"HOTEL"} desc={"Bespoke interiors for exclusive hotel."} />
+                        <ImageSection img={"img/mobilbraccoHotel.jpg"} title={"HOTEL"} desc={"Bespoke interiors for exclusive hotel."} url={"/hostfurniture"} />
                     </div>
                     <div className={styles.mainRow2}>
-                        <ImageSection img={"img/mobilbraccoHome.jpg"} title={"HOME"} desc={"Timeless interior for your home."} />
+                        <ImageSection img={"img/mobilbraccoHome.jpg"} title={"HOME"} desc={"Timeless interior for your home."} url={"/home"} />
                     </div>
                 </div>
                 
