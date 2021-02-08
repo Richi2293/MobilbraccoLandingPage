@@ -13,7 +13,7 @@ interface ImageSectionProps {
 const ImageSection: React.FC<ImageSectionProps> = ({ img, title, desc }) => {
 
     return (
-        <div>
+        <div className={styles.divMain}>
             <div className={styles.divImage}>
                 {img != "" ?
                     <img src={img} className={styles.image} />
