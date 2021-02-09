@@ -142,6 +142,8 @@
   }
   .main {
     align-items: inherit;
+    justify-content: flex-start;
+    padding-top: 50px;
   }
   .mainRow {
     display: flex;
@@ -158,4 +160,20 @@
     margin-left: 0px;
     overflow: hidden;
   }
+}
+
+
+@media (max-width: 450px) {
+  .mainRow1 {
+    display: flex;
+    margin-right: 0px;
+    overflow: visible;
+  }
+  .mainRow2 {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 0px;
+    overflow: visible;
+  }
+
 }
