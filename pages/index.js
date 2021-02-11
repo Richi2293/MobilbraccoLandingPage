@@ -7,13 +7,13 @@ export default function Home() {
         <div className={styles.container}>
             <Head>
                 <title>MOBILBRACCO - Mobili Senza Tempo</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
 
             <main className={styles.main}>
                 <div className={styles.contentOverlay}>
                     <h1>MOBILBRACCO</h1>
-                    <h4>ITALIAN QUALITY MANIFACTURE</h4>
+                    <h4>ITALIAN QUALITY MANUFACTURE</h4>
                 </div>
                 <div className={styles.mainRow}>
                     <div className={styles.mainRow1}>
